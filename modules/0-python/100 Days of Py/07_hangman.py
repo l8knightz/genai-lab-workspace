@@ -7,7 +7,7 @@ with open("words.txt") as f:
     word_list = f.read().splitlines()
 # Randomly select a word from the list
 chosen_word = random.choice(word_list)
-print(chosen_word)  # For debugging purposes, to see the chosen word
+#print(chosen_word)  # For debugging purposes, to see the chosen word
 for letter in chosen_word:
     print("_", end=" ")  # Print underscores for each letter in the chosen word
 print()
