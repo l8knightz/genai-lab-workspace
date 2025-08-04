@@ -91,7 +91,6 @@ hangman_stages = ['''
       |
 =========''']
 stage = 0  # Initialize the stage of the hangman
-
 # Begin the game loop
 while not game_over:
     guessed_word = ""  # Reset the guessed letters for each new guess
@@ -124,4 +123,5 @@ while not game_over:
         # If the letter has already been guessed incorrectly
         print(f"You already guessed '{picked}' incorrectly. Try another letter.")
 
-    print(hangman_stages[stage])  # Print the current hangman stage
+    print(hangman_stages[stage - 1])  # Print the current hangman stage
+    print("\nIncorrect guesses left:", 7 - stage)  # Show remaining incorrect guesses
